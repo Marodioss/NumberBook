@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="241dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+            app:ccp_arrowColor="@color/purple_200"
+            app:ccp_textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="242dp"
+            android:layout_height="match_parent"
+            android:hint="phone Number"
+            android:inputType="phone" />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/or"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:hint="Name" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="100px"
+        android:background="@color/teal_200"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/sms"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300px"
+        android:text="SMS" />
+
+    <Button
+        android:id="@+id/add_Contact"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300px"
+        android:text="Add Contact" />
+
+    <Button
+        android:id="@+id/show_Contact"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300px"
+        android:text="Show Contacts" />
+
+
+
+
+</LinearLayout>

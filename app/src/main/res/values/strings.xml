@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NumberBook</string>
+    <string name="or"> OR : </string>
+    <string name="name"> Name : </string>
+    <string name="email"> Email : </string>
+    <string name="phone"> Phone Number : </string>
+</resources>
